@@ -36,6 +36,8 @@
   --text-color: #000;
 }
 
+/* better to split to separate blocks */
+
 .btn {
   text-align: center;
   transition: transform 0.5s linear;
@@ -69,6 +71,7 @@ a {
 }
 
 body {
+  /* Needs fallback font */
   font-family: 'Muller';
   background-color: #f1f1f1;
 }
@@ -230,6 +233,7 @@ ul {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  /* repeat */
   align-items: stretch;
 }
 
@@ -417,6 +421,7 @@ ul {
 }
 
 .section-services-item:nth-last-child(1), .section-services-item:nth-last-child(2) {
+  /* px is not required for zero */
   margin-bottom: 0px;
 }
 
@@ -475,6 +480,7 @@ ul {
   margin-right: 0;
 }
 
+/* nth-last-child looks strange. Maybe refactor rule which excluded: `:not(5)` */
 .section-advantages-item:nth-last-child(1), .section-advantages-item:nth-last-child(2), .section-advantages-item:nth-last-child(3), .section-advantages-item:nth-last-child(4) {
   margin-bottom: 0;
 }
